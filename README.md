@@ -46,3 +46,12 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
 - Consistencia
    - Microserviços: Eventual
    - Monolitos: Imediata
+
+### Benefícios da Arquitetura de Microsserviços
+ - Benefícios
+   - Otimizado para escalabilidade horizontal
+   - Tolerância a falhas (também reduzindo os Single Point of Faiture)
+   - Permitir a heterogeneidade de tecnologias
+   - Publicações mais rápidas
+   - Maior simplicidade da base de código 
+ 
