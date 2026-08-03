@@ -63,3 +63,15 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
  - Diversos componentes são citados nos livros, como Linguage Ubíqua, Contextos Delimitados, Repositórios, Entidade, Agregados, Eventos de Domínio, Serviços de Domínio, e Factories
  - O valor principal do Domain-Driven Design está em modelar software que resolva um problema do negócio, e não apenas que tenha uma estrutura X ou pastas Y
  - É essencial ter contato com especialistas do negócio, visto que na prática a teoria é outra, e achismos dificilmente resultam em funcionalidades úteis para seus usuários
+
+ ### Linguagem Ubíqua
+  - Também conhecida como Linguagem Onipresente, é um termo usado por Erick Evans para descrever uma linguagem compartilhada pelo time
+  - "Time" envolve desenvolvedores, especialistas do domínio, e outros membros
+  - É muito comum, infelizmente, do time de desenvolvimento estar alienado aos requisitos do negócio
+  - Assim como os requisitos do negócio, a Linguagem Ubíqua está em constante evolução, junto ao entendimento do time do negocio
+  - Em domínios mais complexos a importância dela aumenta mais ainda. Afinal, o DDD é mais recomendado para cenários desse tipo, como E-Commerces
+  
+### Entidades
+ - Identificadas geralmente através de substantivo contidos nas descrições de processos de negócio
+ - Contém um identificador único, se aceita quem sejam atualizados com o tempo sem perder sua identidade
+ - A nível técnico, é recomendado que tenham seus setters privados, para se ter maior controle de regras de negócio e com outros componentes, coo os eventos de domínio.
