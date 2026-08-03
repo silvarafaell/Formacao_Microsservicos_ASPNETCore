@@ -55,3 +55,11 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
    - Publicações mais rápidas
    - Maior simplicidade da base de código 
  
+### O que é Domain-Driven Design
+ - Abordagem de desenvolvimento orientado ao domínio do negócio, alinhado a linguagem utilizada nele ao software produzido
+ - Termo apresentado por Eric Evans no livro "Domain-Driven Design: Tackling Complexity in the Heart of Software"
+ - Não é uma arquitetura, nem reforça a uma em especifico.
+ - É importante não se tornar puritano depois e utilizar os conceitos aprendidos como uma bala de prata. Exemplo: repositório para atualizações mais complexas
+ - Diversos componentes são citados nos livros, como Linguage Ubíqua, Contextos Delimitados, Repositórios, Entidade, Agregados, Eventos de Domínio, Serviços de Domínio, e Factories
+ - O valor principal do Domain-Driven Design está em modelar software que resolva um problema do negócio, e não apenas que tenha uma estrutura X ou pastas Y
+ - É essencial ter contato com especialistas do negócio, visto que na prática a teoria é outra, e achismos dificilmente resultam em funcionalidades úteis para seus usuários
