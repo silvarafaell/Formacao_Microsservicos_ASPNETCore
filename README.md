@@ -93,3 +93,7 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
  - Geralmente associado a um Agregado
  - Se indica geralmente que sua interface fique no Core, e sua implementação na Infrastrucutre
  - Pode serve como uma fronteira entre o Modelo de Persistência e o de Domínio
+ 
+### Contextos Delimitados
+ - Mapeia um subdomínio para uma solução, contendo peculiaridades próprias na linguagem ubíqua para entidades, value objects e outros componentes
+ - Um exemplo é o de Cliente. O cliente para um setor de marketing pode ser representado por nome, dados de contato e histórico de compras, para o setor de Entregas apenas por seu nome e endereço, e para o setor de Fidelização, apenas pelos seus dados de compra e contato
