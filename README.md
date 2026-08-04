@@ -80,3 +80,10 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
  - Se diferenciam das entidades ao não terem um identificador único
  - São identificados pelo seus atributos como um todo, não apenas por um único
  - Um exemplo famoso é o endereço. Um endereço é imutável, ele é composto por logradouro, bairro, CEP, etc. Se um desses itens mudarem, estaremos falando de outro endereço completamente diferente
+
+### Agregados
+ - Conjunto de entidades e Value Objects que representam uma unidade de consistência. O ponto de entrada é conhecido como Aggregate Root
+ - Para exemplificar, considere o exemplo de Pedido. Um pedido contém itens de pedido, e também endereço de entregae/ou pagamento
+ - Os itens e endereço de pedido não existem sem o Pedido. Eles devem estar consistentes entre si
+ - Em um banco de dados NoSQL orientado a documento, geralmente um agregado vai mapear para uma coleção, já que é possível ter objetos internos (tanto entidade quanto value object)
+ - Geralmente haverá um repositório por Agregado, já que não faz muito sentido poder alterar elementos do agregado diretamente sem passar pelo o Aggregate Root
