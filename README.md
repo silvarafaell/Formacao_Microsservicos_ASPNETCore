@@ -97,3 +97,10 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
 ### Contextos Delimitados
  - Mapeia um subdomínio para uma solução, contendo peculiaridades próprias na linguagem ubíqua para entidades, value objects e outros componentes
  - Um exemplo é o de Cliente. O cliente para um setor de marketing pode ser representado por nome, dados de contato e histórico de compras, para o setor de Entregas apenas por seu nome e endereço, e para o setor de Fidelização, apenas pelos seus dados de compra e contato
+ 
+### Mapeamento de Contextos
+ - O mapeamento de contextos auxilia na definição e visualização dos relacionamentos entre contextos delimitados
+ - Existem alguns tipos de relacionamentos, como:
+   - Shared Kernel: aproveitamento de código entre contextos
+   - Partner: evolução em conjunto, mas exige maeios esforço na parte de gestão
+   - Customer-Supplier: O Customer (downstream) depende do Supplier (upstream).
