@@ -87,3 +87,9 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
  - Os itens e endereço de pedido não existem sem o Pedido. Eles devem estar consistentes entre si
  - Em um banco de dados NoSQL orientado a documento, geralmente um agregado vai mapear para uma coleção, já que é possível ter objetos internos (tanto entidade quanto value object)
  - Geralmente haverá um repositório por Agregado, já que não faz muito sentido poder alterar elementos do agregado diretamente sem passar pelo o Aggregate Root
+ 
+### Repositórios
+ - Padrão utilizado para a realização de operações em coleções, agnóstico a tecnologia utilizada
+ - Geralmente associado a um Agregado
+ - Se indica geralmente que sua interface fique no Core, e sua implementação na Infrastrucutre
+ - Pode serve como uma fronteira entre o Modelo de Persistência e o de Domínio
