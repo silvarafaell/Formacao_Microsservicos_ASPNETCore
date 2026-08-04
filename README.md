@@ -75,3 +75,8 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
  - Identificadas geralmente através de substantivo contidos nas descrições de processos de negócio
  - Contém um identificador único, se aceita quem sejam atualizados com o tempo sem perder sua identidade
  - A nível técnico, é recomendado que tenham seus setters privados, para se ter maior controle de regras de negócio e com outros componentes, coo os eventos de domínio.
+ 
+### Value Objects
+ - Se diferenciam das entidades ao não terem um identificador único
+ - São identificados pelo seus atributos como um todo, não apenas por um único
+ - Um exemplo famoso é o endereço. Um endereço é imutável, ele é composto por logradouro, bairro, CEP, etc. Se um desses itens mudarem, estaremos falando de outro endereço completamente diferente
