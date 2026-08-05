@@ -104,3 +104,13 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
    - Shared Kernel: aproveitamento de código entre contextos
    - Partner: evolução em conjunto, mas exige maeios esforço na parte de gestão
    - Customer-Supplier: O Customer (downstream) depende do Supplier (upstream).
+   
+### Arquitetura Limpa - Camada Core
+ - Também chamada de Domain, é a camada central da aplicação, onde não deveria ter dependências em outros projetos
+ - Seus principais componentes são (relacionado com DDD):
+   - Entities
+   - ValueObjects
+   - Repositories (interfaces)
+   - Enums
+   - Serviços de domínio
+   - Eventos domínio
