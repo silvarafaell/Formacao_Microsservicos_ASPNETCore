@@ -122,3 +122,11 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
    - Serviços de Integração com outros sistemas
    - Serviços de integração Cloud
    - Serviços de integração com Message brokers
+
+### Arquitetura Limpa - Camada Application
+ - É aqui onde são implementadas os casos de uso da aplicação, envolvendo os modelos de dados que a aplicação recebe do usuário/mundo exterior
+ - Seus principais componentes são:
+   - Serviços de aplicação (geralmente 1.1 para funcionalidades)
+   - Commands e Queries (se utilizar o padrão CQRS)
+   - Modelos de entrada e saída (DTOs)
+   - Subscribers/Consumers de eventos
