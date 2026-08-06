@@ -114,3 +114,11 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
    - Enums
    - Serviços de domínio
    - Eventos domínio
+
+### Arquitetura Limpa - Camada Infrastructure
+ - É aqui onde são implementadas as integrações com componentes da infra-estrutura ou outros sistemas, como banco de dados, APIs externas, sistemas legados, serviços de Cloud, e etc
+ - Seus Principais componentes são:
+   - Implementação de Repositórios
+   - Serviços de Integração com outros sistemas
+   - Serviços de integração Cloud
+   - Serviços de integração com Message brokers
