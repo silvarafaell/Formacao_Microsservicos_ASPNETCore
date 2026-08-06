@@ -130,3 +130,9 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
    - Commands e Queries (se utilizar o padrão CQRS)
    - Modelos de entrada e saída (DTOs)
    - Subscribers/Consumers de eventos
+
+### Arquitetura Limpa - Camada API
+ - É aqui onde outros sistemas se integram com a aplicação/API. Esses sistemas podem ser front-end, desktop ou mesmo outras APIs
+ - Seus principais componentes são:
+   - Controllers
+   - Startup (que orquestra a configuração da aplicação)
