@@ -136,3 +136,8 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
  - Seus principais componentes são:
    - Controllers
    - Startup (que orquestra a configuração da aplicação)
+
+### O que é CQRS
+ - Sigla para Command Query Responsibility Segregation, é um padrão que separa a responsabilidade de escrita e leitura
+ - É um padrão bastante utilizada não somente por promover uso de modelos/bancos de dados diferentes mas por melhorar a legibilidade, testabilidade e manutenção
+ - Seus principais componentes são: Commands e Queries, e seus respectivos Handlers.
