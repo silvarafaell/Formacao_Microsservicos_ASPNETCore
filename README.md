@@ -152,3 +152,10 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
   - Geralmente ficam ou na camada de Application, ou na camada de Infractructure. Isso pode ocorrer pois em alguns casos, a eficiência na consulta dos dados específicos é mais importante do que o perfeccionismo do padrão
   - Contém os dados de consulta, que são tratados pelo o Handler 
  
+### Padrão Mediator
+ - Padrão utilizado para desacoplar classes das que eles dependem diretamente
+ - Ao invés de conhecer as regras de instância de outras, a classe "pediria" ao objeto Mediator para "entregar" o objeto
+ - Este padrão funciona muito bem com o padrão CQRS, já que cada controller precisaria delegar o Command ou Query ao seu Handler
+ - Uma biblioteca utilizada bastante para isso é o MediatR, que mapeia os Handlers, com as classes de dados (Commands ou Queries) e de saída (View Model)
+ - Com isso, o MediatR permite, passando o Command ou Query, econtrar o seu Handler respectivo e delegar o processamento dos dados
+ - Isso resulta em uma estrutura desacoplada e simples a nível do Controller, com novos Handlers sendo adicionados sem complexidade
