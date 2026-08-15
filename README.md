@@ -136,3 +136,26 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
  - Seus principais componentes são:
    - Controllers
    - Startup (que orquestra a configuração da aplicação)
+
+### O que é CQRS
+ - Sigla para Command Query Responsibility Segregation, é um padrão que separa a responsabilidade de escrita e leitura
+ - É um padrão bastante utilizada não somente por promover uso de modelos/bancos de dados diferentes mas por melhorar a legibilidade, testabilidade e manutenção
+ - Seus principais componentes são: Commands e Queries, e seus respectivos Handlers.
+
+### Commands e Queries
+- Commands
+  - Comandos representam alterações no estado do sistema, sendo nomeados de acordo com a ação realizada pelo usuário
+  - Geralmente ficam na camada de Application, já que correspondem a um caso de uso, como AddProduct, RegisterParticipant, DeactivateAccount
+  - Eles contém os modelos de dados da operação, e são então tratados pelos seus respectivos Handlers
+- Queries
+  - Consultas representam..consultas no sistema, ou seja, supostamente não deveriam alterar o sistema (embora em alguns casos, como registro de data de leitura, alterem o sistema)
+  - Geralmente ficam ou na camada de Application, ou na camada de Infractructure. Isso pode ocorrer pois em alguns casos, a eficiência na consulta dos dados específicos é mais importante do que o perfeccionismo do padrão
+  - Contém os dados de consulta, que são tratados pelo o Handler 
+ 
+### Padrão Mediator
+ - Padrão utilizado para desacoplar classes das que eles dependem diretamente
+ - Ao invés de conhecer as regras de instância de outras, a classe "pediria" ao objeto Mediator para "entregar" o objeto
+ - Este padrão funciona muito bem com o padrão CQRS, já que cada controller precisaria delegar o Command ou Query ao seu Handler
+ - Uma biblioteca utilizada bastante para isso é o MediatR, que mapeia os Handlers, com as classes de dados (Commands ou Queries) e de saída (View Model)
+ - Com isso, o MediatR permite, passando o Command ou Query, econtrar o seu Handler respectivo e delegar o processamento dos dados
+ - Isso resulta em uma estrutura desacoplada e simples a nível do Controller, com novos Handlers sendo adicionados sem complexidade
