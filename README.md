@@ -159,3 +159,19 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
  - Uma biblioteca utilizada bastante para isso é o MediatR, que mapeia os Handlers, com as classes de dados (Commands ou Queries) e de saída (View Model)
  - Com isso, o MediatR permite, passando o Command ou Query, econtrar o seu Handler respectivo e delegar o processamento dos dados
  - Isso resulta em uma estrutura desacoplada e simples a nível do Controller, com novos Handlers sendo adicionados sem complexidade
+
+### O que é MongoDB
+ - Banco de dados NoSQL não são tabulares, armazenando dados em modelos diferentes do que as tabelas ralacionais
+ - Os tipos principais de bancos de dados NoSQL são:
+   - Chave-Valor(Redis)
+   - Documentos (MongoDB, RavenDB)
+   - Grafos (Neo4j)
+   - Orientados a colunas (Cassandra)
+ - MongoDB
+   - Bando de dados NoSQL orientado a documentos, com um formato semelhante ao Json (chamado BSON)
+   - Os documentos são armazenados em coleções (collections), o que seria análogo as tabelas em bancos de dados relacionais
+   - É um banco de dados de alta performance, e por ter suporte a objetos relacionados, facilita a modelagem de dados
+   - O pacote oficial para .NET é o MongoDB.Driver, de fácil utilização
+   - É possível armazenar um Agregado completo como documento, por ele ter suporte a objetos relacionados
+   - A chave primária de um documento é o campo _id(por convenção a propriedade Id da classe é usada), e atualizações são feitas no objeto inteiro
+   
