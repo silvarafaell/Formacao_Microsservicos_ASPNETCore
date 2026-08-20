@@ -175,3 +175,10 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
    - É possível armazenar um Agregado completo como documento, por ele ter suporte a objetos relacionados
    - A chave primária de um documento é o campo _id(por convenção a propriedade Id da classe é usada), e atualizações são feitas no objeto inteiro
    
+### Comunicação Tradicional
+ - O jeito tradicional de comunicação entre sistemas é o chamado request-response
+ - Nele, um cliente (computador ou aplicação) realiza uma requisição, e o servidor response com os dados pedidos
+ - Enquanto o servidor tiver capacidade de responder as requisições, esse modelo atende muito bem
+ - Porém, se o volume de tráfego aumentar muito, ele pode rapidamente se tornar um gargalo
+ - Se o sistema falhar sob uma alta carga de requisições, ou mesmo tiver uma falha interna, o fluxo de comunicação vai falhar e parar
+ - Imagine uma rede de dependência entre serviços envolvendo ele diretamente. Requisições vão resultar em timeout se não forem tratadas, e isso pode cascadear
