@@ -182,3 +182,11 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
  - Porém, se o volume de tráfego aumentar muito, ele pode rapidamente se tornar um gargalo
  - Se o sistema falhar sob uma alta carga de requisições, ou mesmo tiver uma falha interna, o fluxo de comunicação vai falhar e parar
  - Imagine uma rede de dependência entre serviços envolvendo ele diretamente. Requisições vão resultar em timeout se não forem tratadas, e isso pode cascadear
+
+### O que é Event-Driven Architecture
+ - Arquitetura de Software onde a estrutura básica é composta por (relacionados a eventos)
+   - Captura
+   - Comunicação
+   - Persistência
+   - Processamento
+ - Um evento, derivado do mesmo nome do DDD, é uma ocorrência significativa do sistema, como uma alteração do estado
