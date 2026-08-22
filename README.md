@@ -190,3 +190,9 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
    - Persistência
    - Processamento
  - Um evento, derivado do mesmo nome do DDD, é uma ocorrência significativa do sistema, como uma alteração do estado
+
+### Padrão Outbox
+ - Um padrão que é frequentemente de ser utilizado em conjunto com o event-driven architecture é o Outbox
+ - Seu objetivo é garantir consistência de operações e sua posterior publicação de mensagem no RabbitMQ, afinal o Message Broker pode sair do ar.
+ - Nele a mensagem a ser publicada é persistida também, e um serviço recorrente publicaria ela ide mandeira independente.
+ 
