@@ -215,3 +215,14 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
  - Outros conceitos importantes de se entender são os de Exchange e Routing Key
    - Exchange: agentes responsáveis por rotear as mensagens para filas, utilizando atributos de cabeçalho, routing keys, ou bindings
    - Routing Key: funciona como um relacionamento entre um Exchange e uma Fila, descrevendo para qual fila a mensagem deve ser direcionada 
+
+### Service Discovery
+ - Baseado no problema apresentado anteriormente, sobre os microserviços precisarem conhecer a localização dos outros, uma solução que surgiu foi a de Service Discovery
+ - Nela, um serviço armazena informações sobre outros serviços registrados neles através de uma chave e seu endereço
+ - Finalmente, através dessa chave outros serviços podem consultar o endereço registrado e realizar a requisição.
+ - Um componenete essecial do Service Discovery é o Service Registry. Ele é o banco de dados que vai conter esse mapeamento entre chaves e os endereços dos serviços
+ - Por conta dessa responsabilidade grande, ele precisa ter alta disponibilidade e estar atualizado
+ - Alguns exemplos de ferramentas de Service Discovery são:
+   - Netflix Eureka
+   - Consul
+   - etc
