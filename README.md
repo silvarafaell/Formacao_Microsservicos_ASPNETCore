@@ -226,3 +226,16 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
    - Netflix Eureka
    - Consul
    - etc
+
+### Configurações
+ - Existem algumas configurações possiveis de um Service Registry, especificamente para o registro dos serviços
+ - Dois padrões são utilizados para isso, o Self-Registration e o Third-Party Registration
+   - Self-Registration: cada instância é responsável por se registrar e de-registrar ao Service Registry
+   - Third-Party Registration: nesse caso, as instâncias dos serviços não são responsaveis
+
+### Sobre o Consul
+ - O Hashicorp Consul é uma solução de Service Mesh que oferece , entre outras coisas, funcionalidades de:
+   - Service Descovery
+   - Health Checking
+   - Key-Value Store
+ 
