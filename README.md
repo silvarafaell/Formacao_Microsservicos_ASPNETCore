@@ -196,3 +196,22 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
  - Seu objetivo é garantir consistência de operações e sua posterior publicação de mensagem no RabbitMQ, afinal o Message Broker pode sair do ar.
  - Nele a mensagem a ser publicada é persistida também, e um serviço recorrente publicaria ela ide mandeira independente.
  
+### O que é RabbitMQ
+ - O RabbitMQ está entre os Message Brokers mais populares, e tem uma grande quantidade de bibliotecas oficiais para diversas linguagens/Frameworks
+ - Entre suas principais funcionalidades, estão:
+   - Tópicos
+   - Deadletter queues
+   - Agendamento de entregas
+   - Envio em batch (ou lotes)
+   - Transações
+   - Deduplicação
+ - Fila é o principal conceito em mensageria, e representa uma estrutura onde as mensagens são armazenadas e consumidas
+ - Entre suas principais características, estão:
+   - Durável
+   - Auto-Delete
+   - Exclusiva
+
+### Conceitos importantes
+ - Outros conceitos importantes de se entender são os de Exchange e Routing Key
+   - Exchange: agentes responsáveis por rotear as mensagens para filas, utilizando atributos de cabeçalho, routing keys, ou bindings
+   - Routing Key: funciona como um relacionamento entre um Exchange e uma Fila, descrevendo para qual fila a mensagem deve ser direcionada 
