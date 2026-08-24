@@ -239,3 +239,8 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
    - Health Checking
    - Key-Value Store
  
+### O que é API Gateway
+ - Um API Gateway é uma ferramenta de gerenciamento de APIs, sendo uma interface entre os clientes e um conjunto de serviços(no nosso caso, especificamente Microserviços)
+ - Ele aceita todas requisições em sua API, e agrega o resultado de chamanda(s) interna(S), retornando para o cliente
+ - API Gateways possibilitam funcionalidades essenciais para APIs corporativos como autenticação, rate limiting e estatísticas
+ 
