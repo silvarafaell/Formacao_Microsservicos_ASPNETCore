@@ -257,3 +257,14 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
      - Cloud endpoints
      - Amazon API Gateway
      - Azure API Management
+     
+### O que é Ocelot
+ - API Gateway em .NET, focado em arquiteturas de Microserviços ou Orientadas a Serviço
+ - Entre suas capacidades, estão:
+   - Roteamento
+   - Service Discovery com Consul e Eureka
+   - Authenticação e Autorização
+   - Caching
+   - Rate Limiting
+   - Retry
+   - Logging/Tracing/Correlation
