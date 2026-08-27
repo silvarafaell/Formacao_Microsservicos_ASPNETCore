@@ -244,3 +244,16 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
  - Ele aceita todas requisições em sua API, e agrega o resultado de chamanda(s) interna(S), retornando para o cliente
  - API Gateways possibilitam funcionalidades essenciais para APIs corporativos como autenticação, rate limiting e estatísticas
  
+### Benefícios e principais alternativas
+ - Existem diversas razões para se utilizar um API Gateway, entre elas:
+   - Maior segurança e controle sobre sua arquitetura de microserviços, ao concentrar a autenticação e permitir o rate limiting
+   - Muito utilizado em monetização de APIs, por permitir o gerenciamento das requisições e agregar os registros
+   - Desacoplar as requisições dos usuarios dos endereços internos de seus serviços. Com isso, é possível migrar de sistema, e utilizar o mesmo contrato de API
+   - As principais tecnologias para API Gateway são:
+     - Kong
+     - Ocelot
+     - WSO2
+     - Apigee
+     - Cloud endpoints
+     - Amazon API Gateway
+     - Azure API Management
