@@ -276,3 +276,14 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
  - Mas não somente é utilizada para dados estáveis, mas também para dados não tão estáveis mas em situações onde se precisa ter maior performance
  - Nesses casos, o cache se torna um segundo banco da aplicação, servindo requisições de dados
  - É essencial pensar na consistência desses dados, para que não sejam alterados no banco de dados por uma parte da aplicação e fique inconsistente com a cache
+
+### Sobre Redis
+ - Cache distribuído, que armazena os dados em uma estrutura em memória. Também é conhecido por ser um banco de dados NoSQL de chave-valor
+ - O seu principal uso é como cache e também como banco de dados, este último principalmente utilizado em situações com requisitos altos de performance
+ - É reconhecido por sua alta performance por conta de estar na memória
+ - Entre suas funcionalidades, estão:
+   - Transações
+   - Replicação
+   - Recuperação de falha
+   - Mensageria
+   - Configuração de tempo de expiração dos dados
