@@ -268,3 +268,11 @@ Curso Formação Microsserviços com ASP.NET Core no nextwave(LuisDEV)
    - Rate Limiting
    - Retry
    - Logging/Tracing/Correlation
+   
+### Cache distribuído
+ - Antes de falar sobre cache distribuido, é essencial falar sobre o uso de cache, mesmo que de memória
+ - A cache serve como um armazenamento temporário, armazenada em memória, e que auxilia na melhora de desempenho em uma aplicação
+ - Exemplo: requisição para obter dados de países, estados e cidades, que são dados estáveis
+ - Mas não somente é utilizada para dados estáveis, mas também para dados não tão estáveis mas em situações onde se precisa ter maior performance
+ - Nesses casos, o cache se torna um segundo banco da aplicação, servindo requisições de dados
+ - É essencial pensar na consistência desses dados, para que não sejam alterados no banco de dados por uma parte da aplicação e fique inconsistente com a cache
